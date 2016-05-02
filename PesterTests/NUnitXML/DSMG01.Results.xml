@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="3" errors="0" failures="2" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-05-02" time="00:19:25">
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="3" errors="0" failures="2" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-05-02" time="02:14:11">
   <environment user="admin" machine-name="HV1" cwd="C:\OneDrive\Develop\Git" user-domain="DOESITSCRIPT" platform="Microsoft Windows Server 2012 R2 Essentials|C:\Windows|\Device\Harddisk1\Partition2" nunit-version="2.5.8.0" os-version="6.3.9600" clr-version="4.0.30319.42000" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Powershell" name="Pester" executed="True" result="Failure" success="False" time="0.2321" asserts="0">
+  <test-suite type="Powershell" name="Pester" executed="True" result="Failure" success="False" time="0.2122" asserts="0">
     <results>
-      <test-suite type="TestFixture" name="Microsoft Deployment Workbench server operational readiness" executed="True" result="Failure" success="False" time="0.2321" asserts="0" description="Microsoft Deployment Workbench server operational readiness">
+      <test-suite type="TestFixture" name="Microsoft Deployment Workbench server operational readiness" executed="True" result="Failure" success="False" time="0.2122" asserts="0" description="Microsoft Deployment Workbench server operational readiness">
         <results>
-          <test-case description="Monitor Data True" name="Microsoft Deployment Workbench server operational readiness.Monitor Data True" time="0.096" asserts="0" success="True" result="Success" executed="True" />
-          <test-case description="Operating Systems 4" name="Microsoft Deployment Workbench server operational readiness.Operating Systems 4" time="0.0818" asserts="0" success="False" result="Failure" executed="True">
+          <test-case description="Monitor Data True" name="Microsoft Deployment Workbench server operational readiness.Monitor Data True" time="0.0988" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Operating Systems 4" name="Microsoft Deployment Workbench server operational readiness.Operating Systems 4" time="0.0794" asserts="0" success="False" result="Failure" executed="True">
             <failure>
               <message>Expected: {3}
 But was:  {4}</message>
-              <stack-trace>at line: 19 in C:\OneDrive\Develop\Git\PSPesterPresentationKit.HV1\PesterTests\NodeUnitTests\DSMG01.Operations.Tests.ps1
+              <stack-trace>at line: 19 in C:\OneDrive\Develop\Git\PSPesterDashboardKickstarter.HV1\PesterTests\NodeUnitTests\DSMG01.Operations.Tests.ps1
 19:             $CurrentBaseline.ShareStatistics.OperatingSystems | Should be $Snapshot.ShareStatistics.OperatingSystems
 </stack-trace>
             </failure>
           </test-case>
-          <test-case description="Operating Systems 4" name="Microsoft Deployment Workbench server operational readiness.Operating Systems 4" time="0.0543" asserts="0" success="False" result="Failure" executed="True">
+          <test-case description="Operating Systems 4" name="Microsoft Deployment Workbench server operational readiness.Operating Systems 4" time="0.034" asserts="0" success="False" result="Failure" executed="True">
             <failure>
               <message>Expected: {0}
 But was:  {1}</message>
-              <stack-trace>at line: 22 in C:\OneDrive\Develop\Git\PSPesterPresentationKit.HV1\PesterTests\NodeUnitTests\DSMG01.Operations.Tests.ps1
+              <stack-trace>at line: 22 in C:\OneDrive\Develop\Git\PSPesterDashboardKickstarter.HV1\PesterTests\NodeUnitTests\DSMG01.Operations.Tests.ps1
 22:             $CurrentBaseline.ShareStatistics.TaskSequences | Should be $Snapshot.ShareStatistics.TaskSequences
 </stack-trace>
             </failure>

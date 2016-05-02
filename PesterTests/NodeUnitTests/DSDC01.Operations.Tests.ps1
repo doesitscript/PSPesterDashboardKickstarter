@@ -8,10 +8,10 @@ Param(
 # Active Directory configuration as you expect it to be. Modify to reflect your AD
 
 #hard coded due to restrction on invoke-pester -script ScriptName  <--needed to pass argument for stored xml data
-$CurrentBaseline = Import-Clixml -Path C:\OneDrive\Develop\Git\PSPesterPresentationKit.HV1\OperationalBaselines\MockSnapshots\DSDC01.Baseline.xml
+$CurrentBaseline = Import-Clixml -Path C:\OneDrive\Develop\Git\PSPesterDashboardKickstarter.HV1\OperationalBaselines\MockSnapshots\DSDC01.Baseline.xml
 
 #Import saved AD snapshot
-$Snapshot = Import-Clixml -Path C:\OneDrive\Develop\Git\PSPesterPresentationKit.HV1\OperationalBaselines\MockBaseLines\DSDC01.Baseline.xml
+$Snapshot = Import-Clixml -Path C:\OneDrive\Develop\Git\PSPesterDashboardKickstarter.HV1\OperationalBaselines\MockBaseLines\DSDC01.Baseline.xml
 
 Describe 'Active Directory configuration operational readiness' {
 

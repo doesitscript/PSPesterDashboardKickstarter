@@ -2,10 +2,10 @@
 # Microsoft Deployment Workbench Server Health Validate
 
 #hard coded due to restrction on invoke-pester -script ScriptName  <--needed to pass argument for stored xml data
-$CurrentBaseline = Import-Clixml -Path C:\OneDrive\Develop\Git\PSPesterPresentationKit.HV1\OperationalBaselines\MockSnapshots\DSMG01.Baseline.xml
+$CurrentBaseline = Import-Clixml -Path C:\OneDrive\Develop\Git\PSPesterDashboardKickstarter.HV1\OperationalBaselines\MockSnapshots\DSMG01.Baseline.xml
 
 #Import saved AD snapshot
-$Snapshot = Import-Clixml -Path C:\OneDrive\Develop\Git\PSPesterPresentationKit.HV1\OperationalBaselines\MockBaseLines\DSMG01.Baseline.xml
+$Snapshot = Import-Clixml -Path C:\OneDrive\Develop\Git\PSPesterDashboardKickstarter.HV1\OperationalBaselines\MockBaseLines\DSMG01.Baseline.xml
 
 Describe "Microsoft Deployment Workbench server operational readiness" {
     

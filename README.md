@@ -53,14 +53,34 @@ I'll add a blog post to explain the organization of this project soon.
 ### How It Works Overview
 The idea is to export-clixml on PS commands at a known good configuration and use the same script that made the original baseline and run it at a later time and compare the two xml files using pester.
 
-### Breakdown  
-##### Invoke-InfrastructureValidation.ps1 
-1.  In essence the script looks at the naming of the computer that its given for type of roles they have, typical naming implies its role. I realize now that this makes it less versatile but I was going for immediate demo value.  I need to open an issue for this.
-2.  It runs a corresponding base lining script to create a current baseline for its naming scheme or it  connect to a remote system (Ln 42) and generates a new xml baseline or uses a mocked up baseline that I gen'd for the demo.  (Ln 49) There's room for improvement here as well
-3.  At (Ln 71 & 75) the script then inserts the path to the orignal snapshot and the path to the newly created snapshot of the system into a pester test that correspond to the name of the system/role of the system.  
+### Get-Started: Use This in your infrastructure
+##### Make a fresh baseline
+```PowerShell
+Invoke-Command -FilePath .\OperationalBaselines\DC.Snapshot.ps1 -Computername $ComputerName |
+Export-CliXML .\OperationalBaselines\MockBaselines\DSDC01.Baseline.xml 
+```  
+In my script, the role of system is 2nd and 3rd letters of my the node name and is used throughout the script.
+So **DC**.Snapshot.ps1 corrosponds to DS**DC**01.Baseline.xml
 
-##### Invoke-SuiteReport.ps1  
-1.  Pester NUnit XML is output to one folder. (Ln 11) generates the reports based on the folder path.
+##### Make some changes to that system
+Use the commands in DC.Snapshot.ps1 to see what you can change on the system that will trigger a failure on the tests.
+After making some changes rerun the baselining script
+```PowerShell
+Invoke-Command -FilePath .\OperationalBaselines\DC.Snapshot.ps1 -Computername $ComputerName |
+Export-CliXML .\OperationalBaselines\MockBaselines\DSDC01.Baseline.xml 
+```
+##### Now Create a Pester Tests
+This part is where you design your pester tests to read the XML files that were created in the previous two commands.
+There is no automation out there for this part so its an engineering process just like the previous two steps.
+Rename the Pester Test to PesterTests\TestTemplates\\**DC**.Operations.Tests.ps1
+
+##### Turn The Demo Script Into a Production Ready Script
+The section of the *Invoke-SuiteReport.ps1* that lists the computer names are setup for mocking this for a presentation or demonstration. Replace this with code to ingest computernames from a CSV, database, text file.
+
+##### Turn on the water to your pipeline and watch it flow
+```PowerShell
+. Invoke-InfrastructureValidation.ps1
+```
 
 ### Development
 

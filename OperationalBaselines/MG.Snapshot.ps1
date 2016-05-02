@@ -18,5 +18,5 @@ $MDTSnapshot.ShareStatistics = Get-MDTDeploymentShareStatistics -Path DS002:
 $MDTSnapshot.DeploymentShare = Test-MDTDeploymentShare -SourcePath
 #endregion
 
-Write-Output $MDTSnapshot | Export-Clixml -Path c:\Out.xml
+Write-Output $MDTSnapshot 
 

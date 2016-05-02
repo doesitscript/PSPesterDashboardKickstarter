@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="22" errors="0" failures="4" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-05-02" time="00:19:27">
+  <environment user="admin" machine-name="HV1" cwd="C:\OneDrive\Develop\Git" user-domain="DOESITSCRIPT" platform="Microsoft Windows Server 2012 R2 Essentials|C:\Windows|\Device\Harddisk1\Partition2" nunit-version="2.5.8.0" os-version="6.3.9600" clr-version="4.0.30319.42000" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Powershell" name="Pester" executed="True" result="Failure" success="False" time="0.7712" asserts="0">
+    <results>
+      <test-suite type="TestFixture" name="Active Directory configuration operational readiness" executed="True" result="Failure" success="False" time="0.7712" asserts="0" description="Active Directory configuration operational readiness">
+        <results>
+          <test-case description="Forest FQDN " name="Active Directory configuration operational readiness.Forest FQDN " time="0.0959" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="ForestMode Windows2008R2Forest" name="Active Directory configuration operational readiness.ForestMode Windows2008R2Forest" time="0.0247" asserts="0" success="False" result="Failure" executed="True">
+            <failure>
+              <message>Expected: {Windows2012R2Forest}
+But was:  {6}</message>
+              <stack-trace>at line: 23 in C:\OneDrive\Develop\Git\PSPesterPresentationKit.HV1\PesterTests\NodeUnitTests\DSDC01.Operations.Tests.ps1
+23:             $CurrentBaseline.ForestInformation.ForestMode | Should be $Snapshot.ForestInformation.ForestMode.ToString()
+</stack-trace>
+            </failure>
+          </test-case>
+          <test-case description="Server DC1.DOESITSCRIPT.local is SchemaMaster" name="Active Directory configuration operational readiness.Server DC1.DOESITSCRIPT.local is SchemaMaster" time="0.0368" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Server DC1.DOESITSCRIPT.local is DomainNamingMaster" name="Active Directory configuration operational readiness.Server DC1.DOESITSCRIPT.local is DomainNamingMaster" time="0.0236" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Server DC1.DOESITSCRIPT.local is a GlobalCatalog" name="Active Directory configuration operational readiness.Server DC1.DOESITSCRIPT.local is a GlobalCatalog" time="0.064" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Total Domain Controllers 0" name="Active Directory configuration operational readiness.Total Domain Controllers 0" time="0.0691" asserts="0" success="False" result="Failure" executed="True">
+            <failure>
+              <message>Expected: {1}
+But was:  {0}</message>
+              <stack-trace>at line: 44 in C:\OneDrive\Develop\Git\PSPesterPresentationKit.HV1\PesterTests\NodeUnitTests\DSDC01.Operations.Tests.ps1
+44:             $CurrentBaseline.Domain.DomainControllers.Count | Should be @($Snapshot.DomainControllers).Count
+</stack-trace>
+            </failure>
+          </test-case>
+          <test-case description="DomainController  exists" name="Active Directory configuration operational readiness.DomainController  exists" time="0.0262" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="DNSRoot DOESITSCRIPT.local" name="Active Directory configuration operational readiness.DNSRoot DOESITSCRIPT.local" time="0.0249" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="NetBIOSName " name="Active Directory configuration operational readiness.NetBIOSName " time="0.0202" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="DomainMode Windows2012R2Domain" name="Active Directory configuration operational readiness.DomainMode Windows2012R2Domain" time="0.0144" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="DistinguishedName DC=DOESITSCRIPT,DC=local" name="Active Directory configuration operational readiness.DistinguishedName DC=DOESITSCRIPT,DC=local" time="0.0236" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Server DC1.DOESITSCRIPT.local is RIDMaster" name="Active Directory configuration operational readiness.Server DC1.DOESITSCRIPT.local is RIDMaster" time="0.0271" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Server DC1.DOESITSCRIPT.local is PDCEmulator" name="Active Directory configuration operational readiness.Server DC1.DOESITSCRIPT.local is PDCEmulator" time="0.0158" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Server DC1.DOESITSCRIPT.local is InfrastructureMaster" name="Active Directory configuration operational readiness.Server DC1.DOESITSCRIPT.local is InfrastructureMaster" time="0.0251" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="ComplexityEnabled" name="Active Directory configuration operational readiness.ComplexityEnabled" time="0.0682" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Password History count" name="Active Directory configuration operational readiness.Password History count" time="0.0262" asserts="0" success="False" result="Failure" executed="True">
+            <failure>
+              <message>Expected: {24}
+But was:  {20}</message>
+              <stack-trace>at line: 81 in C:\OneDrive\Develop\Git\PSPesterPresentationKit.HV1\PesterTests\NodeUnitTests\DSDC01.Operations.Tests.ps1
+81:             $CurrentBaseline.DefaultPassWordPoLicy.PasswordHistoryCount | Should be $Snapshot.DefaultPassWordPoLicy.PasswordHistoryCount
+</stack-trace>
+            </failure>
+          </test-case>
+          <test-case description="Lockout Threshold equals 0" name="Active Directory configuration operational readiness.Lockout Threshold equals 0" time="0.0393" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Lockout duration equals 00:30:00" name="Active Directory configuration operational readiness.Lockout duration equals 00:30:00" time="0.0171" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Lockout observation window equals 00:30:00" name="Active Directory configuration operational readiness.Lockout observation window equals 00:30:00" time="0.0299" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Min password age equals 00:00:00" name="Active Directory configuration operational readiness.Min password age equals 00:00:00" time="0.0194" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Max password age equals " name="Active Directory configuration operational readiness.Max password age equals " time="0.0167" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Subnet " name="Active Directory configuration operational readiness.Subnet " time="0.063" asserts="0" success="False" result="Failure" executed="True">
+            <failure>
+              <message>You cannot call a method on a null-valued expression.</message>
+              <stack-trace>at line: 104 in C:\OneDrive\Develop\Git\PSPesterPresentationKit.HV1\PesterTests\NodeUnitTests\DSDC01.Operations.Tests.ps1</stack-trace>
+            </failure>
+          </test-case>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

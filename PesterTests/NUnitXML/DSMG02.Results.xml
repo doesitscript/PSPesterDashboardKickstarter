@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="3" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-05-02" time="00:19:25">
+  <environment user="admin" machine-name="HV1" cwd="C:\OneDrive\Develop\Git" user-domain="DOESITSCRIPT" platform="Microsoft Windows Server 2012 R2 Essentials|C:\Windows|\Device\Harddisk1\Partition2" nunit-version="2.5.8.0" os-version="6.3.9600" clr-version="4.0.30319.42000" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Powershell" name="Pester" executed="True" result="Success" success="True" time="0.178" asserts="0">
+    <results>
+      <test-suite type="TestFixture" name="Microsoft Deployment Workbench server operational readiness" executed="True" result="Success" success="True" time="0.178" asserts="0" description="Microsoft Deployment Workbench server operational readiness">
+        <results>
+          <test-case description="Monitor Data True" name="Microsoft Deployment Workbench server operational readiness.Monitor Data True" time="0.0659" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Operating Systems 4" name="Microsoft Deployment Workbench server operational readiness.Operating Systems 4" time="0.0903" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Operating Systems 4" name="Microsoft Deployment Workbench server operational readiness.Operating Systems 4" time="0.0218" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

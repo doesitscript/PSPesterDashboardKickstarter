@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="1" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-05-01" time="17:22:51">
+  <environment user="NotARealAccount" machine-name="RedMondDC1" cwd="C:\OneDrive\Develop\Git" user-domain="DOESITSCRIPT" platform="Microsoft Windows Server 2012 R2 Essentials|C:\Windows|\Device\Harddisk1\Partition2" nunit-version="2.5.8.0" os-version="6.3.9600" clr-version="4.0.30319.42000" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Powershell" name="Pester" executed="True" result="Failure" success="False" time="0.0153" asserts="0">
+    <results>
+      <test-suite type="TestFixture" name="Error in C:\OneDrive\Develop\Git\PSPesterPresentationKit.HV1\PesterTests\DC.Operations.Tests.ps1" executed="True" result="Failure" success="False" time="0.0153" asserts="0" description="Error in C:\OneDrive\Develop\Git\PSPesterPresentationKit.HV1\PesterTests\DC.Operations.Tests.ps1">
+        <results>
+          <test-case description="Error occurred in test script 'C:\OneDrive\Develop\Git\PSPesterPresentationKit.HV1\PesterTests\DC.Operations.Tests.ps1'" name="Error in C:\OneDrive\Develop\Git\PSPesterPresentationKit.HV1\PesterTests\DC.Operations.Tests.ps1.Error occurred in test script 'C:\OneDrive\Develop\Git\PSPesterPresentationKit.HV1\PesterTests\DC.Operations.Tests.ps1'" time="0.0153" asserts="0" success="False" result="Failure" executed="True">
+            <failure>
+              <message>Missing an argument for parameter 'Path'. Specify a parameter of type 'System.String[]' and try again.</message>
+              <stack-trace>at &lt;ScriptBlock&gt;, C:\OneDrive\Develop\Git\PSPesterPresentationKit.HV1\PesterTests\DC.Operations.Tests.ps1: line 11</stack-trace>
+            </failure>
+          </test-case>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

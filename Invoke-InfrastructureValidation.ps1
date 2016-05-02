@@ -68,8 +68,8 @@ $files | foreach {
     }
 
     # Hard code xml baseline & xml snapshot *.test file when using Invoke-Pester. Better suggestion?
-    ((Get-Content -Path $RoleTestTemplate ) -replace "#BaseSnapshotPath#","$($_.Fullname)" ) `
-                                            -replace "#BaseLineOutPath#","$($NodeBaseSnapshot)" |
+    ((Get-Content -Path $RoleTestTemplate ) -replace "#BaseSnapshotPath#","'$($_.Fullname)'" ) `
+                                            -replace "#BaseLineOutPath#","'$($NodeBaseSnapshot)'" |
                                              Out-File -FilePath $NodeUnitTestFile -Encoding utf8 -Force
 
     Invoke-Pester @paramPester 

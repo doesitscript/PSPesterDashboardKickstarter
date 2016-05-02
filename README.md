@@ -50,6 +50,18 @@ After the script runs, it will dump a suite of reports in the OperationalReports
 Open Index.html in IE or Edge.
 I'll add a blog post to explain the organization of this project soon.
 
+### How It Works Overview
+The idea is to export-clixml on PS commands at a known good configuration and use the same script that made the original baseline and run it at a later time and compare the two xml files using pester.
+
+### Breakdown  
+##### Invoke-InfrastructureValidation.ps1 
+1.  In essence the script looks at the naming of the computer that its given for type of roles they have, typical naming implies its role. I realize now that this makes it less versatile but I was going for immediate demo value.  I need to open an issue for this.
+2.  It runs a corresponding base lining script to create a current baseline for its naming scheme or it  connect to a remote system (Ln 42) and generates a new xml baseline or uses a mocked up baseline that I gen'd for the demo.  (Ln 49) There's room for improvement here as well
+3.  At (Ln 71 & 75) the script then inserts the path to the orignal snapshot and the path to the newly created snapshot of the system into a pester test that correspond to the name of the system/role of the system.  
+
+##### Invoke-SuiteReport.ps1  
+1.  Pester NUnit XML is output to one folder. (Ln 11) generates the reports based on the folder path.
+
 ### Development
 
 Want to contribute? Great!

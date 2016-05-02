@@ -27,6 +27,7 @@ The following individuals & organizations have inspired me in this small project
 * [@StevenMurawski] - Devops & Chef enthusiast. Co-Author to the  [ReleasePipeline](https://msdn.microsoft.com/en-us/powershell/dsc/whitepapers#the-release-pipeline-model)
 * [@ModelAMSummit] - Automation Summit 2016 put on by @ModelTechSol 
 * [@adbertram] - For having a beer with me while we talked working on pipelines. Be on the lookout for some of his upcoming Pester work.
+* See [ReleasePipeline On RunAsRadio](http://www.runasradio.com/Shows/Show/469) For more information
 
 ### Dependencies
 This project makes use of [ReportUnit](http://reportunit.relevantcodes.com/) for reading the NUnit Spec XML from Pester & HTML generation.
@@ -45,7 +46,9 @@ You can change the parameters at the top but don't have to.
 ```PowerShell
 . Invoke-InfrastructureValidation.ps1
 ```
-After the script runs, it will dump a suite of reports in the OperationalReports folder. Open Index.html in IE or Edge.
+After the script runs, it will dump a suite of reports in the OperationalReports folder.
+Open Index.html in IE or Edge.
+I'll add a blog post to explain the organization of this project soon.
 
 ### Development
 

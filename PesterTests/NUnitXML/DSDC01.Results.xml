@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="22" errors="0" failures="4" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-05-02" time="02:14:14">
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="22" errors="0" failures="4" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-05-02" time="02:27:32">
   <environment user="admin" machine-name="HV1" cwd="C:\OneDrive\Develop\Git" user-domain="DOESITSCRIPT" platform="Microsoft Windows Server 2012 R2 Essentials|C:\Windows|\Device\Harddisk1\Partition2" nunit-version="2.5.8.0" os-version="6.3.9600" clr-version="4.0.30319.42000" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Powershell" name="Pester" executed="True" result="Failure" success="False" time="1.1915" asserts="0">
+  <test-suite type="Powershell" name="Pester" executed="True" result="Failure" success="False" time="0.7974" asserts="0">
     <results>
-      <test-suite type="TestFixture" name="Active Directory configuration operational readiness" executed="True" result="Failure" success="False" time="1.1915" asserts="0" description="Active Directory configuration operational readiness">
+      <test-suite type="TestFixture" name="Active Directory configuration operational readiness" executed="True" result="Failure" success="False" time="0.7974" asserts="0" description="Active Directory configuration operational readiness">
         <results>
-          <test-case description="Forest FQDN " name="Active Directory configuration operational readiness.Forest FQDN " time="0.0968" asserts="0" success="True" result="Success" executed="True" />
-          <test-case description="ForestMode Windows2008R2Forest" name="Active Directory configuration operational readiness.ForestMode Windows2008R2Forest" time="0.0571" asserts="0" success="False" result="Failure" executed="True">
+          <test-case description="Forest FQDN " name="Active Directory configuration operational readiness.Forest FQDN " time="0.095" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="ForestMode Windows2008R2Forest" name="Active Directory configuration operational readiness.ForestMode Windows2008R2Forest" time="0.0261" asserts="0" success="False" result="Failure" executed="True">
             <failure>
               <message>Expected: {Windows2012R2Forest}
 But was:  {6}</message>
@@ -16,10 +16,10 @@ But was:  {6}</message>
 </stack-trace>
             </failure>
           </test-case>
-          <test-case description="Server DC1.DOESITSCRIPT.local is SchemaMaster" name="Active Directory configuration operational readiness.Server DC1.DOESITSCRIPT.local is SchemaMaster" time="0.1387" asserts="0" success="True" result="Success" executed="True" />
-          <test-case description="Server DC1.DOESITSCRIPT.local is DomainNamingMaster" name="Active Directory configuration operational readiness.Server DC1.DOESITSCRIPT.local is DomainNamingMaster" time="0.0225" asserts="0" success="True" result="Success" executed="True" />
-          <test-case description="Server DC1.DOESITSCRIPT.local is a GlobalCatalog" name="Active Directory configuration operational readiness.Server DC1.DOESITSCRIPT.local is a GlobalCatalog" time="0.1142" asserts="0" success="True" result="Success" executed="True" />
-          <test-case description="Total Domain Controllers 0" name="Active Directory configuration operational readiness.Total Domain Controllers 0" time="0.0789" asserts="0" success="False" result="Failure" executed="True">
+          <test-case description="Server DC1.DOESITSCRIPT.local is SchemaMaster" name="Active Directory configuration operational readiness.Server DC1.DOESITSCRIPT.local is SchemaMaster" time="0.0374" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Server DC1.DOESITSCRIPT.local is DomainNamingMaster" name="Active Directory configuration operational readiness.Server DC1.DOESITSCRIPT.local is DomainNamingMaster" time="0.0251" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Server DC1.DOESITSCRIPT.local is a GlobalCatalog" name="Active Directory configuration operational readiness.Server DC1.DOESITSCRIPT.local is a GlobalCatalog" time="0.0653" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Total Domain Controllers 0" name="Active Directory configuration operational readiness.Total Domain Controllers 0" time="0.0787" asserts="0" success="False" result="Failure" executed="True">
             <failure>
               <message>Expected: {1}
 But was:  {0}</message>
@@ -28,16 +28,16 @@ But was:  {0}</message>
 </stack-trace>
             </failure>
           </test-case>
-          <test-case description="DomainController  exists" name="Active Directory configuration operational readiness.DomainController  exists" time="0.0404" asserts="0" success="True" result="Success" executed="True" />
-          <test-case description="DNSRoot DOESITSCRIPT.local" name="Active Directory configuration operational readiness.DNSRoot DOESITSCRIPT.local" time="0.024" asserts="0" success="True" result="Success" executed="True" />
-          <test-case description="NetBIOSName " name="Active Directory configuration operational readiness.NetBIOSName " time="0.0303" asserts="0" success="True" result="Success" executed="True" />
-          <test-case description="DomainMode Windows2012R2Domain" name="Active Directory configuration operational readiness.DomainMode Windows2012R2Domain" time="0.0151" asserts="0" success="True" result="Success" executed="True" />
-          <test-case description="DistinguishedName DC=DOESITSCRIPT,DC=local" name="Active Directory configuration operational readiness.DistinguishedName DC=DOESITSCRIPT,DC=local" time="0.0253" asserts="0" success="True" result="Success" executed="True" />
-          <test-case description="Server DC1.DOESITSCRIPT.local is RIDMaster" name="Active Directory configuration operational readiness.Server DC1.DOESITSCRIPT.local is RIDMaster" time="0.0362" asserts="0" success="True" result="Success" executed="True" />
-          <test-case description="Server DC1.DOESITSCRIPT.local is PDCEmulator" name="Active Directory configuration operational readiness.Server DC1.DOESITSCRIPT.local is PDCEmulator" time="0.0259" asserts="0" success="True" result="Success" executed="True" />
-          <test-case description="Server DC1.DOESITSCRIPT.local is InfrastructureMaster" name="Active Directory configuration operational readiness.Server DC1.DOESITSCRIPT.local is InfrastructureMaster" time="0.0525" asserts="0" success="True" result="Success" executed="True" />
-          <test-case description="ComplexityEnabled" name="Active Directory configuration operational readiness.ComplexityEnabled" time="0.0974" asserts="0" success="True" result="Success" executed="True" />
-          <test-case description="Password History count" name="Active Directory configuration operational readiness.Password History count" time="0.0234" asserts="0" success="False" result="Failure" executed="True">
+          <test-case description="DomainController  exists" name="Active Directory configuration operational readiness.DomainController  exists" time="0.0381" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="DNSRoot DOESITSCRIPT.local" name="Active Directory configuration operational readiness.DNSRoot DOESITSCRIPT.local" time="0.0147" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="NetBIOSName " name="Active Directory configuration operational readiness.NetBIOSName " time="0.0244" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="DomainMode Windows2012R2Domain" name="Active Directory configuration operational readiness.DomainMode Windows2012R2Domain" time="0.0218" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="DistinguishedName DC=DOESITSCRIPT,DC=local" name="Active Directory configuration operational readiness.DistinguishedName DC=DOESITSCRIPT,DC=local" time="0.0173" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Server DC1.DOESITSCRIPT.local is RIDMaster" name="Active Directory configuration operational readiness.Server DC1.DOESITSCRIPT.local is RIDMaster" time="0.0237" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Server DC1.DOESITSCRIPT.local is PDCEmulator" name="Active Directory configuration operational readiness.Server DC1.DOESITSCRIPT.local is PDCEmulator" time="0.0235" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Server DC1.DOESITSCRIPT.local is InfrastructureMaster" name="Active Directory configuration operational readiness.Server DC1.DOESITSCRIPT.local is InfrastructureMaster" time="0.018" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="ComplexityEnabled" name="Active Directory configuration operational readiness.ComplexityEnabled" time="0.0689" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Password History count" name="Active Directory configuration operational readiness.Password History count" time="0.0275" asserts="0" success="False" result="Failure" executed="True">
             <failure>
               <message>Expected: {24}
 But was:  {20}</message>
@@ -46,12 +46,12 @@ But was:  {20}</message>
 </stack-trace>
             </failure>
           </test-case>
-          <test-case description="Lockout Threshold equals 0" name="Active Directory configuration operational readiness.Lockout Threshold equals 0" time="0.0877" asserts="0" success="True" result="Success" executed="True" />
-          <test-case description="Lockout duration equals 00:30:00" name="Active Directory configuration operational readiness.Lockout duration equals 00:30:00" time="0.0474" asserts="0" success="True" result="Success" executed="True" />
-          <test-case description="Lockout observation window equals 00:30:00" name="Active Directory configuration operational readiness.Lockout observation window equals 00:30:00" time="0.023" asserts="0" success="True" result="Success" executed="True" />
-          <test-case description="Min password age equals 00:00:00" name="Active Directory configuration operational readiness.Min password age equals 00:00:00" time="0.0576" asserts="0" success="True" result="Success" executed="True" />
-          <test-case description="Max password age equals " name="Active Directory configuration operational readiness.Max password age equals " time="0.0216" asserts="0" success="True" result="Success" executed="True" />
-          <test-case description="Subnet " name="Active Directory configuration operational readiness.Subnet " time="0.0755" asserts="0" success="False" result="Failure" executed="True">
+          <test-case description="Lockout Threshold equals 0" name="Active Directory configuration operational readiness.Lockout Threshold equals 0" time="0.0384" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Lockout duration equals 00:30:00" name="Active Directory configuration operational readiness.Lockout duration equals 00:30:00" time="0.0163" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Lockout observation window equals 00:30:00" name="Active Directory configuration operational readiness.Lockout observation window equals 00:30:00" time="0.032" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Min password age equals 00:00:00" name="Active Directory configuration operational readiness.Min password age equals 00:00:00" time="0.0165" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Max password age equals " name="Active Directory configuration operational readiness.Max password age equals " time="0.017" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Subnet " name="Active Directory configuration operational readiness.Subnet " time="0.0717" asserts="0" success="False" result="Failure" executed="True">
             <failure>
               <message>You cannot call a method on a null-valued expression.</message>
               <stack-trace>at line: 104 in C:\OneDrive\Develop\Git\PSPesterDashboardKickstarter.HV1\PesterTests\NodeUnitTests\DSDC01.Operations.Tests.ps1</stack-trace>

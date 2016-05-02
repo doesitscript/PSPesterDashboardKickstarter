@@ -36,7 +36,7 @@ if ($NewBaseline) {
 # Generate fresh baseline data, else use mocked up baselines
 $files = @()
 if ($NewBaseline) {
-    $Job = $SQ01,$MG01,$MG02,$WB03,$DC02,$DC01 | foreach {
+    $Job = $MG01,$MG02,$DC02,$DC01 | foreach {
         $NodeType = $($_.Substring(2,2))
         $thisSess = Get-Variable $($NodeType + "Sess") -ValueOnly
         Invoke-Command -Session $thisSess -FilePath $BaselinePath\$($_.Substring(2,2)).Snapshot.ps1 -AsJob
@@ -49,7 +49,7 @@ if ($NewBaseline) {
         $files += Get-ChildItem (Join-Path -Path $BaseLineOutPath -ChildPath "$($_.PSComputerName).Baseline.xml")
     }
 } else {
-    $SQ01,$MG01,$MG02,$WB03,$DC02,$DC01  | foreach {
+    $MG01,$MG02,$DC02,$DC01  | foreach {
         $files += Get-ChildItem (Join-Path -Path $BaseLineOutPath -ChildPath "$($_).Baseline.xml")
     }
 } # end if NewBaseline 

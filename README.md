@@ -57,7 +57,7 @@ The idea is to export-clixml on PS commands at a known good configuration and us
 ##### Make a fresh baseline
 ```PowerShell
 Invoke-Command -FilePath .\OperationalBaselines\DC.Snapshot.ps1 -Computername $ComputerName |
-Export-CliXML .\OperationalBaselines\MockBaselines\DSDC01.Baseline.xml 
+Export-CliXML .\OperationalBaselines\MockSnapshots\DSDC01.Baseline.xml 
 ```  
 In my script, the role of system is 2nd and 3rd letters of my the node name and is used throughout the script.
 So **DC**.Snapshot.ps1 corrosponds to DS**DC**01.Baseline.xml

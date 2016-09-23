@@ -54,7 +54,7 @@ foreach ($UnitTest in $NUnitHtml) {
         #Find the exact url formatted path of the current CSS/JS file
         $urlTypePath = $regex.matches($content) | foreach {$_.groups['url'].value}
     
-        $content = $regex.Replace($content,$path)
+        $content = $regex.Replace($content,"'$path'")
         
         $content = ($content -replace 'ReportUnit TestRunner Report',"$ApplicationSuiteTitle") `
                              -replace 'Executive Summary',"Infrastrcture Test Suite for $ApplicationSuiteTitle" `

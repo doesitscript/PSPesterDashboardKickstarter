@@ -63,6 +63,6 @@ foreach ($UnitTest in $NUnitHtml) {
         # Change url format to file format relative to script location
     } # end foreach URL replace
 
-    Out-File -InputObject $content -FilePath "$OutputFolder\$OutputHTML" -Force
+    Out-File -InputObject $content -FilePath "$OutputFolder\$OutputHTML" -Force -Encoding 'utf8'
     
 } # end Foreach unittests

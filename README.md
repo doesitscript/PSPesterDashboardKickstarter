@@ -33,11 +33,8 @@ The following individuals & organizations have inspired me in this small project
 This project makes use of [ReportUnit](http://reportunit.relevantcodes.com/) for reading the NUnit Spec XML from Pester & HTML generation.
 It is included in the bin folder and is called during script execution.
 
-* I have found that this runs best with Internet Explorer or Edge. **The reports will not display without ActiveX**
-
 ###  In 5 Second, Get-Results 
-Option 1: Clone/Download and open OperationalReports\Index.html in IE or Edge.  Profit.
-**Enable ActiveX!!**
+Option 1: Clone/Download and open OperationalReports\Index.html in your favorite browswer.  Profit.
 
 ### Have More Time?  
 Option 2: Step through the controller script. 

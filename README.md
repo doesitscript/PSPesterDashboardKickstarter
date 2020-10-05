@@ -7,15 +7,15 @@ Pester is a Unit Testing framework. While it can be used to test code through mo
   - Can send an error code to the console for further automation
 
 ### Goal
-Provide a finished HTML dashboard with no setup other than to download and run the main script.  I want you to take this to your boss and show him today that PowerShell can provide immediate buisiness value to your company. 
+Provide a finished HTML dashboard with no setup other than to download and run the main script.  I want you to take this to your boss and show him today that PowerShell can provide immediate business value to your company. 
 
 ### Note
 There are lots of passing and also lots of failing tests. That is intentional. Won't your boss be so happy when he clicks a failed test and can tell you exactly what you need to fix? Try it!
 
 ### Suggested Ways to Start a Release Pipeline
-* Run the Invoke-InsfrastructureValidation.ps1 as a sceduled task during the the next maintanence window of your servers and re-run every 15 minutes. 
+* Run the Invoke-InsfrastructureValidation.ps1 as a scheduled task during the next maintenance window of your servers and re-run every 15 minutes. 
 Direct the output of the reports to an internal webserver for your team or manager to see. 
-Near the end of the maintanence windowcapture the return code from Pester and send an email to all parties that the infrastructure is validated healthy by automated checks.
+Near the end of the maintenance window capture the return code from Pester and send an email to all parties that the infrastructure is validated healthy by automated checks.
 * Replace the Infrastructure unit tests with code unit tests. On every code commit, run the Invoke-InfrastructureValidation.ps1 and direct the web reports to a Web server.  
 Have a secondary monitor/tv refresh this page automatically to create a live stream effect.
 
@@ -68,7 +68,7 @@ Export-CliXML .\OperationalBaselines\MockBaselines\DSDC01.Baseline.xml
 ```
 ##### Now Create a Pester Tests
 This part is where you design your pester tests to read the XML files that were created in the previous two commands.
-There is no automation out there for this part so its an engineering process just like the previous two steps.
+There is no automation out there for this part so it's an engineering process just like the previous two steps.
 Rename the Pester Test to PesterTests\TestTemplates\\**DC**.Operations.Tests.ps1
 
 ##### Turn The Demo Script Into a Production Ready Script
